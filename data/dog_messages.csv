@@ -1,0 +1,289 @@
+timestamp,dog_name,breed,toy
+2025-09-13T02:04:47.398736,Nimeria,Golden Retriever,Tennis ball
+2025-09-13T02:04:47.398736,Nimeria,Golden Retriever,Rope
+2025-09-13T02:04:47.398736,Nimeria,Golden Retriever,Squeaky toy
+2025-09-13T02:04:47.398736,Nimeria,Golden Retriever,Frisbee
+2025-09-13T02:04:47.398736,Nimeria,Golden Retriever,Stick
+2025-09-13T02:04:47.398736,Nimeria,Golden Retriever,Stuffie
+2025-09-13T02:04:47.398736,Nimeria,Labrador,Tennis ball
+2025-09-13T02:04:47.398736,Nimeria,Labrador,Rope
+2025-09-13T02:04:47.398736,Nimeria,Labrador,Squeaky toy
+2025-09-13T02:04:47.398736,Nimeria,Labrador,Frisbee
+2025-09-13T02:04:47.398736,Nimeria,Labrador,Stick
+2025-09-13T02:04:47.398736,Nimeria,Labrador,Stuffie
+2025-09-13T02:04:47.398736,Nimeria,German Shepherd,Tennis ball
+2025-09-13T02:04:47.398736,Nimeria,German Shepherd,Rope
+2025-09-13T02:04:47.398736,Nimeria,German Shepherd,Squeaky toy
+2025-09-13T02:04:47.398736,Nimeria,German Shepherd,Frisbee
+2025-09-13T02:04:47.398736,Nimeria,German Shepherd,Stick
+2025-09-13T02:04:47.398736,Nimeria,German Shepherd,Stuffie
+2025-09-13T02:04:47.398736,Nimeria,Poodle,Tennis ball
+2025-09-13T02:04:47.398736,Nimeria,Poodle,Rope
+2025-09-13T02:04:47.398736,Nimeria,Poodle,Squeaky toy
+2025-09-13T02:04:47.398736,Nimeria,Poodle,Frisbee
+2025-09-13T02:04:47.398736,Nimeria,Poodle,Stick
+2025-09-13T02:04:47.398736,Nimeria,Poodle,Stuffie
+2025-09-13T02:04:47.398736,Nimeria,Bulldog,Tennis ball
+2025-09-13T02:04:47.398736,Nimeria,Bulldog,Rope
+2025-09-13T02:04:47.398736,Nimeria,Bulldog,Squeaky toy
+2025-09-13T02:04:47.398736,Nimeria,Bulldog,Frisbee
+2025-09-13T02:04:47.398736,Nimeria,Bulldog,Stick
+2025-09-13T02:04:47.398736,Nimeria,Bulldog,Stuffie
+2025-09-13T02:04:47.398736,Nimeria,Beagle,Tennis ball
+2025-09-13T02:04:47.398736,Nimeria,Beagle,Rope
+2025-09-13T02:04:47.398736,Nimeria,Beagle,Squeaky toy
+2025-09-13T02:04:47.398736,Nimeria,Beagle,Frisbee
+2025-09-13T02:04:47.398736,Nimeria,Beagle,Stick
+2025-09-13T02:04:47.398736,Nimeria,Beagle,Stuffie
+2025-09-13T02:04:47.398736,Duke,Golden Retriever,Tennis ball
+2025-09-13T02:04:47.398736,Duke,Golden Retriever,Rope
+2025-09-13T02:04:47.398736,Duke,Golden Retriever,Squeaky toy
+2025-09-13T02:04:47.398736,Duke,Golden Retriever,Frisbee
+2025-09-13T02:04:47.398736,Duke,Golden Retriever,Stick
+2025-09-13T02:04:47.398736,Duke,Golden Retriever,Stuffie
+2025-09-13T02:04:47.398736,Duke,Labrador,Tennis ball
+2025-09-13T02:04:47.398736,Duke,Labrador,Rope
+2025-09-13T02:04:47.398736,Duke,Labrador,Squeaky toy
+2025-09-13T02:04:47.398736,Duke,Labrador,Frisbee
+2025-09-13T02:04:47.398736,Duke,Labrador,Stick
+2025-09-13T02:04:47.398736,Duke,Labrador,Stuffie
+2025-09-13T02:04:47.398736,Duke,German Shepherd,Tennis ball
+2025-09-13T02:04:47.398736,Duke,German Shepherd,Rope
+2025-09-13T02:04:47.398736,Duke,German Shepherd,Squeaky toy
+2025-09-13T02:04:47.398736,Duke,German Shepherd,Frisbee
+2025-09-13T02:04:47.398736,Duke,German Shepherd,Stick
+2025-09-13T02:04:47.398736,Duke,German Shepherd,Stuffie
+2025-09-13T02:04:47.398736,Duke,Poodle,Tennis ball
+2025-09-13T02:04:47.398736,Duke,Poodle,Rope
+2025-09-13T02:04:47.398736,Duke,Poodle,Squeaky toy
+2025-09-13T02:04:47.398736,Duke,Poodle,Frisbee
+2025-09-13T02:04:47.398736,Duke,Poodle,Stick
+2025-09-13T02:04:47.398736,Duke,Poodle,Stuffie
+2025-09-13T02:04:47.398736,Duke,Bulldog,Tennis ball
+2025-09-13T02:04:47.398736,Duke,Bulldog,Rope
+2025-09-13T02:04:47.398736,Duke,Bulldog,Squeaky toy
+2025-09-13T02:04:47.398736,Duke,Bulldog,Frisbee
+2025-09-13T02:04:47.398736,Duke,Bulldog,Stick
+2025-09-13T02:04:47.398736,Duke,Bulldog,Stuffie
+2025-09-13T02:04:47.398736,Duke,Beagle,Tennis ball
+2025-09-13T02:04:47.398736,Duke,Beagle,Rope
+2025-09-13T02:04:47.398736,Duke,Beagle,Squeaky toy
+2025-09-13T02:04:47.398736,Duke,Beagle,Frisbee
+2025-09-13T02:04:47.398736,Duke,Beagle,Stick
+2025-09-13T02:04:47.398736,Duke,Beagle,Stuffie
+2025-09-13T02:04:47.398736,Rex,Golden Retriever,Tennis ball
+2025-09-13T02:04:47.398736,Rex,Golden Retriever,Rope
+2025-09-13T02:04:47.398736,Rex,Golden Retriever,Squeaky toy
+2025-09-13T02:04:47.398736,Rex,Golden Retriever,Frisbee
+2025-09-13T02:04:47.398736,Rex,Golden Retriever,Stick
+2025-09-13T02:04:47.398736,Rex,Golden Retriever,Stuffie
+2025-09-13T02:04:47.398736,Rex,Labrador,Tennis ball
+2025-09-13T02:04:47.398736,Rex,Labrador,Rope
+2025-09-13T02:04:47.398736,Rex,Labrador,Squeaky toy
+2025-09-13T02:04:47.398736,Rex,Labrador,Frisbee
+2025-09-13T02:04:47.398736,Rex,Labrador,Stick
+2025-09-13T02:04:47.398736,Rex,Labrador,Stuffie
+2025-09-13T02:04:47.398736,Rex,German Shepherd,Tennis ball
+2025-09-13T02:04:47.398736,Rex,German Shepherd,Rope
+2025-09-13T02:04:47.398736,Rex,German Shepherd,Squeaky toy
+2025-09-13T02:04:47.398736,Rex,German Shepherd,Frisbee
+2025-09-13T02:04:47.398736,Rex,German Shepherd,Stick
+2025-09-13T02:04:47.398736,Rex,German Shepherd,Stuffie
+2025-09-13T02:04:47.398736,Rex,Poodle,Tennis ball
+2025-09-13T02:04:47.398736,Rex,Poodle,Rope
+2025-09-13T02:04:47.398736,Rex,Poodle,Squeaky toy
+2025-09-13T02:04:47.398736,Rex,Poodle,Frisbee
+2025-09-13T02:04:47.398736,Rex,Poodle,Stick
+2025-09-13T02:04:47.398736,Rex,Poodle,Stuffie
+2025-09-13T02:04:47.398736,Rex,Bulldog,Tennis ball
+2025-09-13T02:04:47.398736,Rex,Bulldog,Rope
+2025-09-13T02:04:47.398736,Rex,Bulldog,Squeaky toy
+2025-09-13T02:04:47.398736,Rex,Bulldog,Frisbee
+2025-09-13T02:04:47.398736,Rex,Bulldog,Stick
+2025-09-13T02:04:47.398736,Rex,Bulldog,Stuffie
+2025-09-13T02:04:47.398736,Rex,Beagle,Tennis ball
+2025-09-13T02:04:47.398736,Rex,Beagle,Rope
+2025-09-13T02:04:47.398736,Rex,Beagle,Squeaky toy
+2025-09-13T02:04:47.398736,Rex,Beagle,Frisbee
+2025-09-13T02:04:47.398736,Rex,Beagle,Stick
+2025-09-13T02:04:47.398736,Rex,Beagle,Stuffie
+2025-09-13T02:04:47.398736,Louie,Golden Retriever,Tennis ball
+2025-09-13T02:04:47.398736,Louie,Golden Retriever,Rope
+2025-09-13T02:04:47.398736,Louie,Golden Retriever,Squeaky toy
+2025-09-13T02:04:47.398736,Louie,Golden Retriever,Frisbee
+2025-09-13T02:04:47.398736,Louie,Golden Retriever,Stick
+2025-09-13T02:04:47.398736,Louie,Golden Retriever,Stuffie
+2025-09-13T02:04:47.398736,Louie,Labrador,Tennis ball
+2025-09-13T02:04:47.398736,Louie,Labrador,Rope
+2025-09-13T02:04:47.398736,Louie,Labrador,Squeaky toy
+2025-09-13T02:04:47.398736,Louie,Labrador,Frisbee
+2025-09-13T02:04:47.398736,Louie,Labrador,Stick
+2025-09-13T02:04:47.398736,Louie,Labrador,Stuffie
+2025-09-13T02:04:47.398736,Louie,German Shepherd,Tennis ball
+2025-09-13T02:04:47.398736,Louie,German Shepherd,Rope
+2025-09-13T02:04:47.398736,Louie,German Shepherd,Squeaky toy
+2025-09-13T02:04:47.398736,Louie,German Shepherd,Frisbee
+2025-09-13T02:04:47.398736,Louie,German Shepherd,Stick
+2025-09-13T02:04:47.398736,Louie,German Shepherd,Stuffie
+2025-09-13T02:04:47.398736,Louie,Poodle,Tennis ball
+2025-09-13T02:04:47.398736,Louie,Poodle,Rope
+2025-09-13T02:04:47.398736,Louie,Poodle,Squeaky toy
+2025-09-13T02:04:47.398736,Louie,Poodle,Frisbee
+2025-09-13T02:04:47.398736,Louie,Poodle,Stick
+2025-09-13T02:04:47.398736,Louie,Poodle,Stuffie
+2025-09-13T02:04:47.398736,Louie,Bulldog,Tennis ball
+2025-09-13T02:04:47.398736,Louie,Bulldog,Rope
+2025-09-13T02:04:47.398736,Louie,Bulldog,Squeaky toy
+2025-09-13T02:04:47.398736,Louie,Bulldog,Frisbee
+2025-09-13T02:04:47.398736,Louie,Bulldog,Stick
+2025-09-13T02:04:47.398736,Louie,Bulldog,Stuffie
+2025-09-13T02:04:47.398736,Louie,Beagle,Tennis ball
+2025-09-13T02:04:47.398736,Louie,Beagle,Rope
+2025-09-13T02:04:47.398736,Louie,Beagle,Squeaky toy
+2025-09-13T02:04:47.398736,Louie,Beagle,Frisbee
+2025-09-13T02:04:47.398736,Louie,Beagle,Stick
+2025-09-13T02:04:47.398736,Louie,Beagle,Stuffie
+2025-09-13T02:04:47.398736,Bubba,Golden Retriever,Tennis ball
+2025-09-13T02:04:47.398736,Bubba,Golden Retriever,Rope
+2025-09-13T02:04:47.398736,Bubba,Golden Retriever,Squeaky toy
+2025-09-13T02:04:47.398736,Bubba,Golden Retriever,Frisbee
+2025-09-13T02:04:47.398736,Bubba,Golden Retriever,Stick
+2025-09-13T02:04:47.398736,Bubba,Golden Retriever,Stuffie
+2025-09-13T02:04:47.398736,Bubba,Labrador,Tennis ball
+2025-09-13T02:04:47.398736,Bubba,Labrador,Rope
+2025-09-13T02:04:47.398736,Bubba,Labrador,Squeaky toy
+2025-09-13T02:04:47.398736,Bubba,Labrador,Frisbee
+2025-09-13T02:04:47.398736,Bubba,Labrador,Stick
+2025-09-13T02:04:47.398736,Bubba,Labrador,Stuffie
+2025-09-13T02:04:47.398736,Bubba,German Shepherd,Tennis ball
+2025-09-13T02:04:47.398736,Bubba,German Shepherd,Rope
+2025-09-13T02:04:47.398736,Bubba,German Shepherd,Squeaky toy
+2025-09-13T02:04:47.398736,Bubba,German Shepherd,Frisbee
+2025-09-13T02:04:47.398736,Bubba,German Shepherd,Stick
+2025-09-13T02:04:47.398736,Bubba,German Shepherd,Stuffie
+2025-09-13T02:04:47.398736,Bubba,Poodle,Tennis ball
+2025-09-13T02:04:47.398736,Bubba,Poodle,Rope
+2025-09-13T02:04:47.398736,Bubba,Poodle,Squeaky toy
+2025-09-13T02:04:47.398736,Bubba,Poodle,Frisbee
+2025-09-13T02:04:47.398736,Bubba,Poodle,Stick
+2025-09-13T02:04:47.398736,Bubba,Poodle,Stuffie
+2025-09-13T02:04:47.398736,Bubba,Bulldog,Tennis ball
+2025-09-13T02:04:47.398736,Bubba,Bulldog,Rope
+2025-09-13T02:04:47.398736,Bubba,Bulldog,Squeaky toy
+2025-09-13T02:04:47.398736,Bubba,Bulldog,Frisbee
+2025-09-13T02:04:47.398736,Bubba,Bulldog,Stick
+2025-09-13T02:04:47.398736,Bubba,Bulldog,Stuffie
+2025-09-13T02:04:47.398736,Bubba,Beagle,Tennis ball
+2025-09-13T02:04:47.398736,Bubba,Beagle,Rope
+2025-09-13T02:04:47.398736,Bubba,Beagle,Squeaky toy
+2025-09-13T02:04:47.398736,Bubba,Beagle,Frisbee
+2025-09-13T02:04:47.398736,Bubba,Beagle,Stick
+2025-09-13T02:04:47.398736,Bubba,Beagle,Stuffie
+2025-09-13T02:04:47.398736,Daisy,Golden Retriever,Tennis ball
+2025-09-13T02:04:47.398736,Daisy,Golden Retriever,Rope
+2025-09-13T02:04:47.398736,Daisy,Golden Retriever,Squeaky toy
+2025-09-13T02:04:47.398736,Daisy,Golden Retriever,Frisbee
+2025-09-13T02:04:47.398736,Daisy,Golden Retriever,Stick
+2025-09-13T02:04:47.398736,Daisy,Golden Retriever,Stuffie
+2025-09-13T02:04:47.398736,Daisy,Labrador,Tennis ball
+2025-09-13T02:04:47.398736,Daisy,Labrador,Rope
+2025-09-13T02:04:47.398736,Daisy,Labrador,Squeaky toy
+2025-09-13T02:04:47.398736,Daisy,Labrador,Frisbee
+2025-09-13T02:04:47.398736,Daisy,Labrador,Stick
+2025-09-13T02:04:47.398736,Daisy,Labrador,Stuffie
+2025-09-13T02:04:47.398736,Daisy,German Shepherd,Tennis ball
+2025-09-13T02:04:47.398736,Daisy,German Shepherd,Rope
+2025-09-13T02:04:47.398736,Daisy,German Shepherd,Squeaky toy
+2025-09-13T02:04:47.398736,Daisy,German Shepherd,Frisbee
+2025-09-13T02:04:47.398736,Daisy,German Shepherd,Stick
+2025-09-13T02:04:47.398736,Daisy,German Shepherd,Stuffie
+2025-09-13T02:04:47.398736,Daisy,Poodle,Tennis ball
+2025-09-13T02:04:47.398736,Daisy,Poodle,Rope
+2025-09-13T02:04:47.398736,Daisy,Poodle,Squeaky toy
+2025-09-13T02:04:47.398736,Daisy,Poodle,Frisbee
+2025-09-13T02:04:47.398736,Daisy,Poodle,Stick
+2025-09-13T02:04:47.398736,Daisy,Poodle,Stuffie
+2025-09-13T02:04:47.398736,Daisy,Bulldog,Tennis ball
+2025-09-13T02:04:47.398736,Daisy,Bulldog,Rope
+2025-09-13T02:04:47.398736,Daisy,Bulldog,Squeaky toy
+2025-09-13T02:04:47.398736,Daisy,Bulldog,Frisbee
+2025-09-13T02:04:47.398736,Daisy,Bulldog,Stick
+2025-09-13T02:04:47.398736,Daisy,Bulldog,Stuffie
+2025-09-13T02:04:47.398736,Daisy,Beagle,Tennis ball
+2025-09-13T02:04:47.398736,Daisy,Beagle,Rope
+2025-09-13T02:04:47.398736,Daisy,Beagle,Squeaky toy
+2025-09-13T02:04:47.398736,Daisy,Beagle,Frisbee
+2025-09-13T02:04:47.398736,Daisy,Beagle,Stick
+2025-09-13T02:04:47.398736,Daisy,Beagle,Stuffie
+2025-09-13T02:04:47.398736,Harley,Golden Retriever,Tennis ball
+2025-09-13T02:04:47.398736,Harley,Golden Retriever,Rope
+2025-09-13T02:04:47.398736,Harley,Golden Retriever,Squeaky toy
+2025-09-13T02:04:47.398736,Harley,Golden Retriever,Frisbee
+2025-09-13T02:04:47.398736,Harley,Golden Retriever,Stick
+2025-09-13T02:04:47.398736,Harley,Golden Retriever,Stuffie
+2025-09-13T02:04:47.398736,Harley,Labrador,Tennis ball
+2025-09-13T02:04:47.398736,Harley,Labrador,Rope
+2025-09-13T02:04:47.398736,Harley,Labrador,Squeaky toy
+2025-09-13T02:04:47.398736,Harley,Labrador,Frisbee
+2025-09-13T02:04:47.398736,Harley,Labrador,Stick
+2025-09-13T02:04:47.398736,Harley,Labrador,Stuffie
+2025-09-13T02:04:47.398736,Harley,German Shepherd,Tennis ball
+2025-09-13T02:04:47.398736,Harley,German Shepherd,Rope
+2025-09-13T02:04:47.398736,Harley,German Shepherd,Squeaky toy
+2025-09-13T02:04:47.398736,Harley,German Shepherd,Frisbee
+2025-09-13T02:04:47.398736,Harley,German Shepherd,Stick
+2025-09-13T02:04:47.398736,Harley,German Shepherd,Stuffie
+2025-09-13T02:04:47.398736,Harley,Poodle,Tennis ball
+2025-09-13T02:04:47.398736,Harley,Poodle,Rope
+2025-09-13T02:04:47.398736,Harley,Poodle,Squeaky toy
+2025-09-13T02:04:47.398736,Harley,Poodle,Frisbee
+2025-09-13T02:04:47.398736,Harley,Poodle,Stick
+2025-09-13T02:04:47.398736,Harley,Poodle,Stuffie
+2025-09-13T02:04:47.398736,Harley,Bulldog,Tennis ball
+2025-09-13T02:04:47.398736,Harley,Bulldog,Rope
+2025-09-13T02:04:47.398736,Harley,Bulldog,Squeaky toy
+2025-09-13T02:04:47.398736,Harley,Bulldog,Frisbee
+2025-09-13T02:04:47.398736,Harley,Bulldog,Stick
+2025-09-13T02:04:47.398736,Harley,Bulldog,Stuffie
+2025-09-13T02:04:47.398736,Harley,Beagle,Tennis ball
+2025-09-13T02:04:47.398736,Harley,Beagle,Rope
+2025-09-13T02:04:47.398736,Harley,Beagle,Squeaky toy
+2025-09-13T02:04:47.398736,Harley,Beagle,Frisbee
+2025-09-13T02:04:47.398736,Harley,Beagle,Stick
+2025-09-13T02:04:47.398736,Harley,Beagle,Stuffie
+2025-09-13T02:04:47.398736,Bailey,Golden Retriever,Tennis ball
+2025-09-13T02:04:47.398736,Bailey,Golden Retriever,Rope
+2025-09-13T02:04:47.398736,Bailey,Golden Retriever,Squeaky toy
+2025-09-13T02:04:47.398736,Bailey,Golden Retriever,Frisbee
+2025-09-13T02:04:47.398736,Bailey,Golden Retriever,Stick
+2025-09-13T02:04:47.398736,Bailey,Golden Retriever,Stuffie
+2025-09-13T02:04:47.398736,Bailey,Labrador,Tennis ball
+2025-09-13T02:04:47.398736,Bailey,Labrador,Rope
+2025-09-13T02:04:47.398736,Bailey,Labrador,Squeaky toy
+2025-09-13T02:04:47.398736,Bailey,Labrador,Frisbee
+2025-09-13T02:04:47.398736,Bailey,Labrador,Stick
+2025-09-13T02:04:47.398736,Bailey,Labrador,Stuffie
+2025-09-13T02:04:47.398736,Bailey,German Shepherd,Tennis ball
+2025-09-13T02:04:47.398736,Bailey,German Shepherd,Rope
+2025-09-13T02:04:47.398736,Bailey,German Shepherd,Squeaky toy
+2025-09-13T02:04:47.398736,Bailey,German Shepherd,Frisbee
+2025-09-13T02:04:47.398736,Bailey,German Shepherd,Stick
+2025-09-13T02:04:47.398736,Bailey,German Shepherd,Stuffie
+2025-09-13T02:04:47.398736,Bailey,Poodle,Tennis ball
+2025-09-13T02:04:47.398736,Bailey,Poodle,Rope
+2025-09-13T02:04:47.398736,Bailey,Poodle,Squeaky toy
+2025-09-13T02:04:47.398736,Bailey,Poodle,Frisbee
+2025-09-13T02:04:47.398736,Bailey,Poodle,Stick
+2025-09-13T02:04:47.398736,Bailey,Poodle,Stuffie
+2025-09-13T02:04:47.398736,Bailey,Bulldog,Tennis ball
+2025-09-13T02:04:47.398736,Bailey,Bulldog,Rope
+2025-09-13T02:04:47.398736,Bailey,Bulldog,Squeaky toy
+2025-09-13T02:04:47.398736,Bailey,Bulldog,Frisbee
+2025-09-13T02:04:47.398736,Bailey,Bulldog,Stick
+2025-09-13T02:04:47.398736,Bailey,Bulldog,Stuffie
+2025-09-13T02:04:47.398736,Bailey,Beagle,Tennis ball
+2025-09-13T02:04:47.398736,Bailey,Beagle,Rope
+2025-09-13T02:04:47.398736,Bailey,Beagle,Squeaky toy
+2025-09-13T02:04:47.398736,Bailey,Beagle,Frisbee
+2025-09-13T02:04:47.398736,Bailey,Beagle,Stick
+2025-09-13T02:04:47.398736,Bailey,Beagle,Stuffie
