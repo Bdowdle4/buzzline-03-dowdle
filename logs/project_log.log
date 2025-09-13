@@ -36,3 +36,70 @@
 2025-09-12 20:27:16 | WARNING | Producer interrupted by user.
 2025-09-12 20:27:16 | INFO | Kafka producer closed.
 2025-09-12 20:27:16 | INFO | END dog producer.
+2025-09-12 21:12:35 | INFO | Logging to file: logs/project_log.log
+2025-09-12 21:12:35 | INFO | Log sanitization enabled, personal info removed
+2025-09-12 21:12:35 | INFO | Project root: C:/Users/USER/Documents/44671/buzzline-03-dowdle
+2025-09-12 21:12:35 | INFO | Data folder: C:/Users/USER/Documents/44671/buzzline-03-dowdle/data
+2025-09-12 21:12:35 | INFO | Data file: C:/Users/USER/Documents/44671/buzzline-03-dowdle/data/dog_messages.csv
+2025-09-12 21:12:35 | INFO | START producer.
+2025-09-12 21:12:35 | INFO | Kafka broker address: localhost:9092
+2025-09-12 21:12:36 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'N6hvXfg2QL-uPxvF0foOZQ', 'controller_id': 1}
+2025-09-12 21:12:36 | INFO | Kafka topic: dog_topic
+2025-09-12 21:12:36 | INFO | Message interval: 4 seconds
+2025-09-12 21:12:36 | INFO | Kafka broker address: localhost:9092
+2025-09-12 21:12:36 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-12 21:12:36 | INFO | Kafka producer successfully created.
+2025-09-12 21:12:36 | INFO | Kafka broker address: localhost:9092
+2025-09-12 21:12:37 | INFO | Topic 'dog_topic' created successfully.
+2025-09-12 21:12:37 | INFO | Kafka topic 'dog_topic' is ready.
+2025-09-12 21:12:37 | INFO | Starting message production to topic 'dog_topic'...
+2025-09-12 21:12:37 | INFO | Opening data file in read mode: C:/Users/USER/Documents/44671/buzzline-03-dowdle/data/dog_messages.csv
+2025-09-12 21:12:37 | INFO | Reading data from file: C:/Users/USER/Documents/44671/buzzline-03-dowdle/data/dog_messages.csv
+2025-09-12 21:12:37 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:12:37.462084', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Tennis ball'}
+2025-09-12 21:12:41 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:12:41.493980', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Rope'}
+2025-09-12 21:12:45 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:12:45.496416', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Squeaky toy'}
+2025-09-12 21:12:49 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:12:49.502978', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Frisbee'}
+2025-09-12 21:12:53 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:12:53.509540', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Stick'}
+2025-09-12 21:12:57 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:12:57.516407', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Stuffie'}
+2025-09-12 21:13:01 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:13:01.519027', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Tennis ball'}
+2025-09-12 21:13:05 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:13:05.522834', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Rope'}
+2025-09-12 21:13:09 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:13:09.527472', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Squeaky toy'}
+2025-09-12 21:13:11 | INFO | Logging to file: logs/project_log.log
+2025-09-12 21:13:11 | INFO | Log sanitization enabled, personal info removed
+2025-09-12 21:13:11 | INFO | Kafka topic: dog_topic
+2025-09-12 21:13:11 | INFO | Kafka bootstrap servers: localhost:9092
+2025-09-12 21:13:12 | INFO | START consumer... Waiting for dog messages...
+2025-09-12 21:13:13 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:13:13.531407', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Frisbee'}
+2025-09-12 21:13:15 | INFO | Received: {'timestamp': '2025-09-13T02:12:41.493980', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Rope'}
+2025-09-12 21:13:15 | INFO | Updated toy counts: {'Rope': 1}
+2025-09-12 21:13:15 | INFO | Received: {'timestamp': '2025-09-13T02:12:45.496416', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Squeaky toy'}
+2025-09-12 21:13:15 | INFO | Updated toy counts: {'Rope': 1, 'Squeaky toy': 1}
+2025-09-12 21:13:15 | INFO | Received: {'timestamp': '2025-09-13T02:12:49.502978', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Frisbee'}
+2025-09-12 21:13:15 | INFO | Updated toy counts: {'Rope': 1, 'Squeaky toy': 1, 'Frisbee': 1}
+2025-09-12 21:13:15 | INFO | Received: {'timestamp': '2025-09-13T02:12:53.509540', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Stick'}
+2025-09-12 21:13:15 | INFO | Updated toy counts: {'Rope': 1, 'Squeaky toy': 1, 'Frisbee': 1, 'Stick': 1}
+2025-09-12 21:13:15 | INFO | Received: {'timestamp': '2025-09-13T02:12:57.516407', 'dog_name': 'Nimeria', 'breed': 'Golden Retriever', 'toy': 'Stuffie'}
+2025-09-12 21:13:15 | INFO | Updated toy counts: {'Rope': 1, 'Squeaky toy': 1, 'Frisbee': 1, 'Stick': 1, 'Stuffie': 1}
+2025-09-12 21:13:15 | INFO | Received: {'timestamp': '2025-09-13T02:13:01.519027', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Tennis ball'}
+2025-09-12 21:13:15 | INFO | Updated toy counts: {'Rope': 1, 'Squeaky toy': 1, 'Frisbee': 1, 'Stick': 1, 'Stuffie': 1, 'Tennis ball': 1}
+2025-09-12 21:13:15 | INFO | Received: {'timestamp': '2025-09-13T02:13:05.522834', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Rope'}
+2025-09-12 21:13:15 | INFO | Updated toy counts: {'Rope': 2, 'Squeaky toy': 1, 'Frisbee': 1, 'Stick': 1, 'Stuffie': 1, 'Tennis ball': 1}
+2025-09-12 21:13:15 | INFO | Received: {'timestamp': '2025-09-13T02:13:09.527472', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Squeaky toy'}
+2025-09-12 21:13:15 | INFO | Updated toy counts: {'Rope': 2, 'Squeaky toy': 2, 'Frisbee': 1, 'Stick': 1, 'Stuffie': 1, 'Tennis ball': 1}
+2025-09-12 21:13:15 | INFO | Received: {'timestamp': '2025-09-13T02:13:13.531407', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Frisbee'}
+2025-09-12 21:13:15 | INFO | Updated toy counts: {'Rope': 2, 'Squeaky toy': 2, 'Frisbee': 2, 'Stick': 1, 'Stuffie': 1, 'Tennis ball': 1}
+2025-09-12 21:13:17 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:13:17.533853', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Stick'}
+2025-09-12 21:13:17 | INFO | Received: {'timestamp': '2025-09-13T02:13:17.533853', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Stick'}
+2025-09-12 21:13:17 | INFO | Updated toy counts: {'Rope': 2, 'Squeaky toy': 2, 'Frisbee': 2, 'Stick': 2, 'Stuffie': 1, 'Tennis ball': 1}
+2025-09-12 21:13:21 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:13:21.538669', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Stuffie'}
+2025-09-12 21:13:21 | INFO | Received: {'timestamp': '2025-09-13T02:13:21.538669', 'dog_name': 'Nimeria', 'breed': 'Labrador', 'toy': 'Stuffie'}
+2025-09-12 21:13:21 | INFO | Updated toy counts: {'Rope': 2, 'Squeaky toy': 2, 'Frisbee': 2, 'Stick': 2, 'Stuffie': 2, 'Tennis ball': 1}
+2025-09-12 21:13:25 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:13:25.543738', 'dog_name': 'Nimeria', 'breed': 'German Shepherd', 'toy': 'Tennis ball'}
+2025-09-12 21:13:25 | INFO | Received: {'timestamp': '2025-09-13T02:13:25.543738', 'dog_name': 'Nimeria', 'breed': 'German Shepherd', 'toy': 'Tennis ball'}
+2025-09-12 21:13:25 | INFO | Updated toy counts: {'Rope': 2, 'Squeaky toy': 2, 'Frisbee': 2, 'Stick': 2, 'Stuffie': 2, 'Tennis ball': 2}
+2025-09-12 21:13:27 | WARNING | Consumer interrupted by user.
+2025-09-12 21:13:27 | INFO | Kafka consumer closed.
+2025-09-12 21:13:29 | INFO | Sent message to topic 'dog_topic': {'timestamp': '2025-09-13T02:13:29.551408', 'dog_name': 'Nimeria', 'breed': 'German Shepherd', 'toy': 'Rope'}
+2025-09-12 21:13:32 | WARNING | Producer interrupted by user.
+2025-09-12 21:13:32 | INFO | Kafka producer closed.
+2025-09-12 21:13:32 | INFO | END producer.
