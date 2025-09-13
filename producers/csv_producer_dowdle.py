@@ -1,10 +1,9 @@
 """
-csv_producer_dowdle.py
+csv_producer_dogs.py
 
-Stream numeric data to a Kafka topic.
+Stream dog action data (from CSV) to a Kafka topic.
 
-It is common to transfer csv data as JSON so 
-each field is clearly labeled. 
+Each row in the CSV is converted to JSON before being sent.
 """
 
 #####################################
@@ -44,14 +43,14 @@ load_dotenv()
 
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("SMOKER_TOPIC", "unknown_topic")
+    topic = os.getenv("DOG_TOPIC", "dog_topic")
     logger.info(f"Kafka topic: {topic}")
     return topic
 
 
 def get_message_interval() -> int:
     """Fetch message interval from environment or use default."""
-    interval = int(os.getenv("SMOKER_INTERVAL_SECONDS", 1))
+    interval = int(os.getenv("DOG_INTERVAL_SECONDS", 4))
     logger.info(f"Message interval: {interval} seconds")
     return interval
 
@@ -61,7 +60,6 @@ def get_message_interval() -> int:
 #####################################
 
 # The parent directory of this file is its folder.
-# Go up one more parent level to get the project root.
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent
 logger.info(f"Project root: {PROJECT_ROOT}")
 
@@ -69,8 +67,8 @@ logger.info(f"Project root: {PROJECT_ROOT}")
 DATA_FOLDER = PROJECT_ROOT.joinpath("data")
 logger.info(f"Data folder: {DATA_FOLDER}")
 
-# Set the name of the data file
-DATA_FILE = DATA_FOLDER.joinpath("smoker_temps.csv")
+# Use the dog_messages.csv file
+DATA_FILE = DATA_FOLDER.joinpath("dog_messages.csv")
 logger.info(f"Data file: {DATA_FILE}")
 
 #####################################
@@ -80,41 +78,37 @@ logger.info(f"Data file: {DATA_FILE}")
 
 def generate_messages(file_path: pathlib.Path):
     """
-    Read from a csv file and yield records one by one, continuously.
+    Read from a CSV file and yield dog action records one by one.
 
     Args:
         file_path (pathlib.Path): Path to the CSV file.
 
     Yields:
-        str: CSV row formatted as a string.
+        dict: Row data formatted as JSON-compatible dictionary.
     """
-    while True:
-        try:
-            logger.info(f"Opening data file in read mode: {DATA_FILE}")
-            with open(DATA_FILE, "r") as csv_file:
-                logger.info(f"Reading data from file: {DATA_FILE}")
+    try:
+        logger.info(f"Opening data file in read mode: {file_path}")
+        with open(file_path, "r", encoding="utf-8") as csv_file:
+            logger.info(f"Reading data from file: {file_path}")
 
-                csv_reader = csv.DictReader(csv_file)
-                for row in csv_reader:
-                    # Ensure required fields are present
-                    if "temperature" not in row:
-                        logger.error(f"Missing 'temperature' column in row: {row}")
-                        continue
+            csv_reader = csv.DictReader(csv_file)
+            for row in csv_reader:
+                # Ensure required fields exist
+                if not {"dog_name", "breed", "toy"}.issubset(row.keys()):
+                    logger.error(f"Missing required columns in row: {row}")
+                    continue
 
-                    # Generate a timestamp and prepare the message
-                    current_timestamp = datetime.utcnow().isoformat()
-                    message = {
-                        "timestamp": current_timestamp,
-                        "temperature": float(row["temperature"]),
-                    }
-                    logger.debug(f"Generated message: {message}")
-                    yield message
-        except FileNotFoundError:
-            logger.error(f"File not found: {file_path}. Exiting.")
-            sys.exit(1)
-        except Exception as e:
-            logger.error(f"Unexpected error in message generation: {e}")
-            sys.exit(3)
+                # Always update timestamp to "now"
+                row["timestamp"] = datetime.utcnow().isoformat()
+
+                logger.debug(f"Generated message: {row}")
+                yield row
+    except FileNotFoundError:
+        logger.error(f"File not found: {file_path}. Exiting.")
+        sys.exit(1)
+    except Exception as e:
+        logger.error(f"Unexpected error in message generation: {e}")
+        sys.exit(3)
 
 
 #####################################
@@ -126,9 +120,9 @@ def main():
     """
     Main entry point for the producer.
 
-    - Reads the Kafka topic name from an environment variable.
-    - Creates a Kafka producer using the `create_kafka_producer` utility.
-    - Streams messages to the Kafka topic.
+    - Reads Kafka topic name from environment variable.
+    - Creates a Kafka producer.
+    - Streams dog messages from CSV to Kafka.
     """
 
     logger.info("START producer.")
