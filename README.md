@@ -118,7 +118,7 @@ Windows:
 
 ```shell
 .venv\Scripts\activate
-py -m producers.json_producer_case
+py -m producers.json_producer_dowdle
 ```
 
 Mac/Linux:
