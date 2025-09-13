@@ -1,31 +1,25 @@
 """
 json_consumer_dowdle.py
 
-Consume json messages from a Kafka topic and process them.
-
-JSON is a set of key:value pairs. 
+Consume JSON messages about dogs from a Kafka topic and process them.
 
 Example serialized Kafka message
-"{\"message\": \"I love Python!\", \"author\": \"Eve\"}"
+"{\"name\": \"Bubba\", \"breed\": \"Golden Retriever\", \"age\": 3, \"favorite_toy\": \"Tennis ball\"}"
 
-Example JSON message (after deserialization) to be analyzed
-{"message": "I love Python!", "author": "Eve"}
-
+Example JSON message (after deserialization)
+{"name": "Bubba", "breed": "Golden Retriever", "age": 3, "favorite_toy": "Tennis ball"}
 """
 
 #####################################
 # Import Modules
 #####################################
 
-# Import packages from Python Standard Library
 import os
-import json  # handle JSON parsing
-from collections import defaultdict  # data structure for counting author occurrences
+import json
+from collections import defaultdict  # used to track toy counts
 
-# Import external packages
 from dotenv import load_dotenv
 
-# Import functions from local modules
 from utils.utils_consumer import create_kafka_consumer
 from utils.utils_logger import logger
 
@@ -42,62 +36,61 @@ load_dotenv()
 
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("BUZZ_TOPIC", "unknown_topic")
+    topic = os.getenv("DOG_TOPIC", "dogs_topic")
     logger.info(f"Kafka topic: {topic}")
     return topic
 
 
 def get_kafka_consumer_group_id() -> str:
     """Fetch Kafka consumer group id from environment or use default."""
-    group_id: str = os.getenv("BUZZ_CONSUMER_GROUP_ID", "default_group")
+    group_id: str = os.getenv("DOG_CONSUMER_GROUP_ID", "dog_group")
     logger.info(f"Kafka consumer group id: {group_id}")
     return group_id
 
 
 #####################################
-# Set up Data Store to hold author counts
+# Global Data Store: Toy Counts
 #####################################
 
-# Initialize a dictionary to store author counts
-# The defaultdict type initializes counts to 0
-# pass in the int function as the default_factory
-# to ensure counts are integers
-# {author: count} author is the key and count is the value
-author_counts: defaultdict[str, int] = defaultdict(int)
+# {toy: count}
+toy_counts: defaultdict[str, int] = defaultdict(int)
 
 
 #####################################
-# Function to process a single message
-# #####################################
+# Function to process a single dog message
+#####################################
 
 
 def process_message(message: str) -> None:
     """
-    Process a single JSON message from Kafka.
+    Process a single JSON dog message from Kafka.
 
     Args:
         message (str): The JSON message as a string.
     """
     try:
-        # Log the raw message for debugging
         logger.debug(f"Raw message: {message}")
 
         # Parse the JSON string into a Python dictionary
         from typing import Any
         message_dict: dict[str, Any] = json.loads(message)
 
-        # Ensure the processed JSON is logged for debugging
-        logger.info(f"Processed JSON message: {message_dict}")
+        logger.info(f"Processed Dog JSON: {message_dict}")
 
-        # Extract the 'author' field from the Python dictionary
-        author = message_dict.get("author", "unknown")
-        logger.info(f"Message received from author: {author}")
+        # Extract fields from the dog message
+        name = message_dict.get("name", "Unknown")
+        breed = message_dict.get("breed", "Unknown")
+        age = message_dict.get("age", "Unknown")
+        toy = message_dict.get("favorite_toy", "Unknown")
 
-        # Increment the count for the author
-        author_counts[author] += 1
+        # Update toy counts
+        toy_counts[toy] += 1
 
-        # Log the updated counts
-        logger.info(f"Updated author counts: {dict(author_counts)}")
+        # Log nicely formatted info
+        logger.info(
+            f"Dog '{name}' is a {age}-year-old {breed} who loves '{toy}'."
+        )
+        logger.info(f"Updated toy counts: {dict(toy_counts)}")
 
     except json.JSONDecodeError:
         logger.error(f"Invalid JSON message: {message}")
@@ -106,42 +99,39 @@ def process_message(message: str) -> None:
 
 
 #####################################
-# Define main function for this module
+# Main Function
 #####################################
 
 
 def main() -> None:
     """
-    Main entry point for the consumer.
+    Main entry point for the dog consumer.
 
     - Reads the Kafka topic name and consumer group ID from environment variables.
     - Creates a Kafka consumer using the `create_kafka_consumer` utility.
-    - Performs analytics on messages from the Kafka topic.
+    - Processes dog messages from the Kafka topic and tracks toy counts.
     """
-    logger.info("START consumer.")
+    logger.info("START dog consumer.")
 
-    # fetch .env content
     topic = get_kafka_topic()
     group_id = get_kafka_consumer_group_id()
     logger.info(f"Consumer: Topic '{topic}' and group '{group_id}'...")
 
-    # Create the Kafka consumer using the helpful utility function.
     consumer = create_kafka_consumer(topic, group_id)
 
-    # Poll and process messages
-    logger.info(f"Polling messages from topic '{topic}'...")
+    logger.info(f"Polling dog messages from topic '{topic}'...")
     try:
         while True:
-            # poll returns a dict: {TopicPartition: [ConsumerRecord, ...], ...}
             records = consumer.poll(timeout_ms=1000, max_records=100)
             if not records:
                 continue
 
             for _tp, batch in records.items():
                 for msg in batch:
-                    # value_deserializer in utils_consumer already decoded this to str
                     message_str: str = msg.value
-                    logger.debug(f"Received message at offset {msg.offset}: {message_str}")
+                    logger.debug(
+                        f"Received message at offset {msg.offset}: {message_str}"
+                    )
                     process_message(message_str)
     except KeyboardInterrupt:
         logger.warning("Consumer interrupted by user.")
@@ -149,16 +139,15 @@ def main() -> None:
         logger.error(f"Error while consuming messages: {e}")
     finally:
         consumer.close()
-        
+
     logger.info(f"Kafka consumer for topic '{topic}' closed.")
-
+    logger.info(f"Final toy counts: {dict(toy_counts)}")
     logger.info(f"END consumer for topic '{topic}' and group '{group_id}'.")
-
+    
 
 #####################################
 # Conditional Execution
 #####################################
 
-# Ensures this script runs only when executed directly (not when imported as a module).
 if __name__ == "__main__":
     main()
